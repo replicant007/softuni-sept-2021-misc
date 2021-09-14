@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #site {
+       display: grid;
+       row-gap: 30px;
+       column-gap: 30px;
+       grid-template-areas: 
+            'header header header'
+            'main main sidebar'
+            'remark remark remark'
+            'footer footer footer'; 
+    }
+
+    #header, #main, #sidebar, #remark, #footer {
+        border: 1px solid;
+        border-radius: 5px;
+
+    }
+
+    #header {
+        grid-area: header;
+    }
+
+    #main {
+        grid-area: main;
+    }
+ 
+    #sidebar {
+        grid-area: sidebar;
+    }
+
+    #remark {
+        grid-area: remark;
+    }
+
+    #footer {
+        grid-area: footer;
+    } 
+
+    @media screen and (max-width: 728px) {
+        #site {
+           grid-template-areas: 
+                'header'
+                'main'
+                'remark'
+                'footer'; 
+        }
+
+        #sidebar {
+            display: none;
+        }
+    }
+</style>
+<body>
+    <div id="site">
+
+        <div id="header">
+            <h1>Header of the site</h1>
+        </div>
+
+        <div id="main">
+            <h2>main content</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Saepe ut perferendis cum itaque qui ab numquam! Voluptatem consequatur nisi ut molestiae, impedit quisquam enim, eligendi, minima quas corporis amet fuga quis magni sed? Earum ex nesciunt quasi? Sed ut soluta, repellat consequatur ipsum enim minima suscipit sint, dolorum quasi ducimus?
+        </div>
+
+        <div id="sidebar">
+            Sider!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus itaque expedita ut fugit! Maiores aliquam dolorum architecto maxime!
+        </div>
+
+        <div id="remark">
+            remark!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus itaque expedita ut fugit! Maiores aliquam dolorum architecto maxime!
+        </div>
+
+        <div id="footer">
+            footer!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati minus itaque expedita ut fugit! Maiores aliquam dolorum architecto maxime!
+        </div>
+
+    </div>
+</body>
+</html>
