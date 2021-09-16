@@ -1,1 +1,18 @@
-PullRequest test
+PULL REQUEST
+
+1. Fork project repo, create a copy to my personal GitHub repo (same name)
+2. git clone <remote-url>   // download a local copy of the project
+3. cd <folder-name>   // navigate to directory
+4. git checkout -b <feature-new>   //  create new branch, and work on it.
+5. git remote add <remote-name> <remote-url>   // add remote
+6. echo Hello world! > test.txt  // make changes
+      cat test.txt   // -> “Hello world!”
+7. git add .   // add all files to staging area
+8. git commit -m “Short description.” // commit changes to local repo
+9. git push -u origin feature-new  // push to remote(personal GitHub) repo, the  work branch feature-new
+10. click Pull Request button and add short description, tag, ect…
+
+
+IGNORE FILE/FOLDER TO BE COMMITED
+
+1.
